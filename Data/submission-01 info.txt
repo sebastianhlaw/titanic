@@ -1,0 +1,18 @@
+0.72727
+
+Features:
+- Sex mapped from 'male', 'female' to 1, 0.
+- Embarkation port mapped from 'S', 'Q', 'C' and Null mapped to integers.
+- Cabin letter (i.e. Deck) mapped to integers (this is sparse data).
+- Null Ages padded using average aged by combination of Title & Sex.
+- Null Fares padded with the median of the class
+
+CV:
+skf = cross_validation.StratifiedKFold(train_labels, n_folds=5, indices=None, shuffle=True, random_state=1)
+Accuracy: 0.79797979798
+             precision    recall  f1-score   support
+
+        0.0       0.83      0.85      0.84       549
+        1.0       0.75      0.72      0.73       342
+
+avg / total       0.80      0.80      0.80       891

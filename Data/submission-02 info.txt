@@ -1,0 +1,29 @@
+0.74641
+
+Features:
+
+data.columns
+Index(['PassengerId', 'Survived', 'Age', 'Fare', 'Parch', 'Pclass', 'Sex',
+       'SibSp', 'Embarked_C', 'Embarked_Q', 'Embarked_S', 'DeckID',
+       'FareBinID', 'FareBin_0', 'FareBin_1', 'FareBin_2', 'FareBin_3',
+       'FareBin_4', 'FareBin_5', 'Title_DR', 'Title_LADY', 'Title_MASTER',
+       'Title_MISS', 'Title_MR', 'Title_MRS', 'Title_REV', 'Title_SIR',
+       'AgeBinID', 'AgeBin_0', 'AgeBin_1', 'AgeBin_2', 'AgeBin_3', 'AgeBin_4',
+       'AgeBin_5'],
+      dtype='object')
+
+forest = RandomForestClassifier(n_estimators=1000,
+                                max_depth=8,
+                                criterion='entropy',
+                                min_samples_split=10,
+                                max_features=5,
+                                random_state=101)
+
+CV:
+Accuracy: 0.824915824916
+             precision    recall  f1-score   support
+
+        0.0       0.84      0.88      0.86       549
+        1.0       0.79      0.74      0.76       342
+
+avg / total       0.82      0.82      0.82       891

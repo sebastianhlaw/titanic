@@ -1,0 +1,25 @@
+Run with 8 splits
+
+Rank: 1
+Mean score: 0.8429 (std: 0.0256)
+Parameters: {'max_depth': 8, 'criterion': 'entropy', 'max_features': 5, 'n_estimators': 1000, 'min_samples_split': 10}
+
+Rank: 2
+Mean score: 0.8429 (std: 0.0237)
+Parameters: {'criterion': 'entropy', 'max_features': 6, 'max_depth': 8, 'n_estimators': 5000, 'min_samples_split': 10}
+
+Rank: 3
+Mean score: 0.8406 (std: 0.0290)
+Parameters: {'criterion': 'entropy', 'max_features': 6, 'max_depth': 8, 'n_estimators': 2500, 'min_samples_split': 2}
+
+Rank: 4
+Mean score: 0.8395 (std: 0.0255)
+Parameters: {'criterion': 'gini', 'n_estimators': 2500, 'max_depth': 8, 'max_features': 6, 'min_samples_split': 10}
+
+Rank: 5
+Mean score: 0.8395 (std: 0.0291)
+Parameters: {'criterion': 'entropy', 'n_estimators': 2500, 'max_depth': 8, 'max_features': 5, 'min_samples_split': 5}
+
+Rank: 6
+Mean score: 0.8395 (std: 0.0272)
+Parameters: {'max_depth': 8, 'criterion': 'entropy', 'max_features': 6, 'n_estimators': 1000, 'min_samples_split': 5}
